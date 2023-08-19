@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fontawesome v6.4.0 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css" />
+    <!-- Library -->
+    <link rel="stylesheet" href="asset/css/aos.css">
+    <link rel="stylesheet" href="asset/css/swiper.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="asset/css/custom.css">
+    <link rel="stylesheet" href="asset/css/style.css" />
+    <!-- favicon.ico -->
+    <link rel="shortcut icon" href="asset/img/logoES.png" type="image/x-icon">
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- start nav -->
+    <nav class="bg-dark d-flex justify-content-between px-4">
+        <h3 class="text-warning">Eleven Stars</h3>
+        <div class="bar">
+            <div class="lan d-flex align-items-center ">
+                <select class=" bg-secondary text-white me-1 me-md-3" onchange="changeLanguage(this)">
+                    <option value="en">EN</option>
+                    <option value="ar">AR</option>
+                </select>
+                <a href="bookMyticket.html" class="btn btn-success me-1 me-md-2" style="background-color: #6f9a37;">Book
+                    Now</a>
+                <a class="btn btn-warning text-white d-sm-inline-block d-md-none " data-bs-toggle="offcanvas"
+                    href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </a>
+            </div>
+
+            <div class="offcanvas offcanvas-start bg-body d-sm-inline-block d-md-none" tabindex="-1"
+                id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h4 class="offcanvas-title text-warning" id="offcanvasExampleLabel">Eleven Stars</h4>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+
+                    <div class="links text-center mt-5 pt-5">
+                        <a href="index.html" class="text-warning ">Home</a>
+                        <a href="contact.html" class="text-dark my-3 d-block ">Contact Us</a>
+                        <a href="bookMyticket.html" class="text-dark ">But Tickets</a>
+                    </div>
+                    <div class="icon d-flex justify-content-center mt-5 pt-5">
+                        <a href="https://www.facebook.com/elevenstarssports/">
+                            <i class="fa-brands fa-facebook text-black-50 fs-4"></i>
+                        </a>
+                        <a href="https://www.instagram.com/elevenstarssports/">
+                            <i class="fa-brands fa-instagram text-black-50 fs-4 px-3"></i>
+                        </a>
+                        <a href="https://t.me/elevenstarssportsofficial">
+                            <i class="fa-brands fa-telegram text-black-50 fs-4"></i>
+                        </a>
+                    </div>
+                    <!-- <div class="contact position-absolute ">
+                        <i class="fa-regular fa-envelope text-dark fs-4 "></i>
+                        <small class="fs-5 text-black-50 "> : e.stars@gmail.com</small>
+                        <hr>
+                        <i class="fa-solid fa-phone text-dark fs-4"></i>
+                        <small class="fs-5 text-black-50"> : +972 598 778 345</small>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav -->
+
+    <!-- start main -->
+    <main>
+        <div class="tg-imglayer"></div>
+        <div class="container pt-4 header">
+            <div class="row pt-3 d-none d-md-flex nav">
+                <div class="col-5 text-end mt-5 pt-5">
+                    <a href="https://www.facebook.com/elevenstarssports/">
+                        <i class="fa-brands fa-facebook text-white fs-4"></i>
+                    </a>
+                    <a href="https://www.instagram.com/elevenstarssports/">
+                        <i class="fa-brands fa-instagram text-white fs-4 px-3"></i>
+                    </a>
+                    <a href="https://t.me/elevenstarssportsofficial">
+                        <i class="fa-brands fa-telegram text-white fs-3"></i>
+                    </a>
+                    <div class="line" style="border-bottom: 2px solid rgb(142, 139, 142)"></div>
+                    <a href="#" class="text-warning link">Home</a>
+                    <a href="contact.html" class="text-white px-md-1 px-lg-3 link">Contact Us</a>
+                    <a href="bookMyticket.html" class="text-white link">Book Now</a>
+                </div>
+                <div class="col-1 ms-3 d-flex justify-content-center overflow-hidden">
+                    <img src="asset/img/logoES.png" style="width: 240px;" alt="" />
+                </div>
+                <div class="col-5 text-start mt-5 pt-5">
+                    <i class="fa-regular fa-envelope text-white fs-4"></i>
+                    <small class="fs-5 text-white"> : sports@eleven-stars.com</small>
+                    <div class="line" style="border-bottom: 2px solid rgb(142, 139, 142)"></div>
+                    <i class="fa-solid fa-phone text-white fs-4"></i>
+                    <small class="fs-5 text-white"> : +90 554 250 00 22</small>
+                </div>
+            </div>
+            <div class="row slider ">
+                <div class="col-12">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active text-center">
+                                <h1 class="text-warning fs-1">ELEVEN STARS <span class="text-white d-block">SPORT</span>
+                                </h1>
+                                <img src="asset/img/img-01.png" class="imgSlider" alt="">
+                                <!-- <div class="btns d-flex justify-content-between mt-5 pt-5">
+                                    <div class="textSlider d-flex justify-content-start ">
+                                        <h1 class="text-white fw-bold">FROM LINE 27</h1>
+                                    </div>
+                                    <div class="btnsSlider">
+                                        <a href="aboutReadMore.html"
+                                            class="btn btn-warning bg-transparent text-warning fw-bold px-4 py-2 mx-2">READ
+                                            MORE</a>
+                                        <a href="bookMyticket.html"
+                                            class="btn btn-warning bg-transparent text-warning fw-bold px-4 py-2">BOOK
+                                            MY TICKET</a>
+                                    </div>
+                                </div> -->
+
+                            </div>
+                            <div class="carousel-item text-center">
+                                <h1 class="text-warning fs-1">ELEVEN STARS <span class="text-white d-block">SPORT</span>
+                                </h1>
+                                <img src="asset/img/img-01.png" class="imgSlider" alt="">
+                                <!-- <div class="btns d-flex justify-content-between mt-5 pt-5">
+                                    <div class="textSlider d-flex justify-content-start ">
+                                        <h1 class="text-white fw-bold">FROM LINE 27</h1>
+                                    </div>
+                                    <div>
+                                        <a href="aboutReadMore.html"
+                                            class="btn btn-warning bg-transparent text-warning fw-bold px-4 py-2 mx-2">READ
+                                            MORE</a>
+                                        <a href="bookMyticket.html"
+                                            class="btn btn-warning bg-transparent text-warning fw-bold px-4 py-2">BOOK
+                                            MY TICKET</a>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="carousel-item text-center">
+                                <h1 class="text-warning fs-1">ELEVEN STARS <span class="text-white d-block">SPORT</span>
+                                </h1>
+                                <img src="asset/img/img-01.png" class="imgSlider" alt="">
+                                <!-- <div class="btns d-flex justify-content-between mt-5 pt-5">
+                                    <div class="textSlider d-flex justify-content-start ">
+                                        <h1 class="text-white fw-bold">FROM LINE 27</h1>
+                                    </div>
+                                    <div>
+                                        <a href="aboutReadMore.html"
+                                            class="btn btn-warning bg-transparent text-warning fw-bold px-4 py-2 mx-2">READ
+                                            MORE</a>
+                                        <a href="bookMyticket.html"
+                                            class="btn btn-warning bg-transparent text-warning fw-bold px-4 py-2">BOOK
+                                            MY TICKET</a>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control prev">PREVIOUS <i class="fa-solid fa-arrow-right"></i></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control next">NEXT <i class="fa-solid fa-arrow-right"></i></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- end main -->
+
+    <!-- start soccer -->
+    <section class="soccer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-2 about text-lg-end text-sm-start ">
+                    <p>
+                        - Sports Camps
+                    </p>
+                    <div class="line"></div>
+                </div>
+                <div class="col-sm-12 col-lg-5 mt-3" data-aos="fade-up" data-aos-duration="3000">
+                    <h4>What are sports camps ?</h4>
+                    <hr>
+                    <p>The sports camp provided by ELEVEN STARS SPORT company is a comprehensive institution for sports
+                        services, covering individual and team sports in all their aspects. The camp is complete with
+                        various elements, including medical examinations, morning and evening training sessions,
+                        rehabilitation programs, and improving physical fitness levels, as well as high-level trial
+                        matches.
+                    </p>
+                    <a href="aboutReadMore.html" class="btn">Read More</a>
+                </div>
+                <div class="col-sm-12 col-lg-5" data-aos="fade-up" data-aos-duration="3000">
+                    <img src="asset/img/img-01(1).jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end soccer -->
+
+    <!-- start gold  -->
+    <section class="gold  p-5 p-lg-0 mt-4" data-aos="fade-up" data-aos-duration="3000">
+        <div class="bg bg-warning d-none d-lg-block"></div>
+        <div class="row mt-0 mt-lg-5">
+            <div class="col-lg-5 d-none d-lg-block "><img src="asset/img/img-02.png" alt=""></div>
+            <div class="col-sm-12 col-lg-7 text-white mt-5 pt-3">
+                <div class="row">
+                    <div class="col">
+                        <h2>Next <span class="text-warning">Camp</span> Timing</h2>
+                        <hr>
+                        <p>Participate now in our upcoming sports camps and reserve your seat before it's too late</p>
+                    </div>
+                </div>
+                <div class="row text-center mt-5 fs-3 fw-bolder">
+                    <p id="timer"></p>
+                    <div class="col-6 col-lg-3">
+                        <p>
+                            <span class="" id="day"></span>
+                            <small class="d-block text-warning">Day</small>
+                        </p>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <p>
+                            <span class="" id="hour"></span>
+                            <small class="d-block text-warning">Hour</small>
+                        </p>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <p><span class="" id="minute"></span> <small class="d-block text-warning">Minute</small></p>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <p><span class="" id="second"></span> <small class="d-block text-warning">Second</small></p>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-12 mt-5 text-center text-lg-start">
+                        <!-- <a href="gladReadMore.html" class="btn text-warning fw-bold border border-warning me-4">READ
+                            MORE</a> -->
+                        <a href="bookMyticket.html" class="btn text-warning fw-bold border border-warning ">BOOK MY
+                            TICKET</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end gold  -->
+
+    <!-- start section result -->
+    <section class="tg-main-section tg-haslayout result mt-5 float-none">
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-12 col-lg-2 about text-lg-end text-sm-start ">
+                    <p>
+                        - latest result
+                    </p>
+                    <div class="line"></div>
+                </div>
+                <div class="col-sm-12 col-lg-10 col-xs-11 pull-right" data-aos="fade-right" data-aos-duration="3000">
+                    <div class="tg-latestresult">
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-6 col-xs-12 tkt ">
+                                <img src="asset/img/1.jpg" alt="" class="img-fluid">
+
+                            </div>
+                            <div class="col-sm-12 col-lg-6 col-xs-12 mt-5">
+                                <div id="tg-matchscrollbar"
+                                    class="tg-matchscrollbar tg-allmatchstatus mCustomScrollbar _mCS_1">
+                                    <div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside"
+                                        tabindex="0" style="max-height: none;">
+                                        <div id="mCSB_1_container" class="mCSB_container"
+                                            style="position:relative; top:0; left:0;" dir="ltr">
+                                            <ul class="tg-matchtabnav" role="tablist">
+                                                <li role="presentation" class="active">
+                                                    <a href="#one" aria-controls="one" role="tab" data-toggle="tab">
+                                                        <div class="tg-match">
+                                                            <div class="tg-box">
+                                                                <strong class="tg-teamlogo">
+                                                                    <img src="asset/img/logoES.png"
+                                                                        alt="image description" class="mCS_img_loaded">
+                                                                </strong>
+                                                            </div>
+                                                            <p class="pt-3">December camp 1-12-2022</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a href="#two" aria-controls="two" role="tab" data-toggle="tab">
+                                                        <div class="tg-match">
+                                                            <div class="tg-box">
+                                                                <strong class="tg-teamlogo">
+                                                                    <img src="asset/img/logoES.png"
+                                                                        alt="image description" class="mCS_img_loaded">
+                                                                </strong>
+                                                            </div>
+                                                            <p class="pt-3">January camp 15 - 1 - 2023</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a href="#three" aria-controls="three" role="tab" data-toggle="tab">
+                                                        <div class="tg-match">
+                                                            <div class="tg-box">
+                                                                <strong class="tg-teamlogo">
+                                                                    <img src="asset/img/logoES.png"
+                                                                        alt="image description" class="mCS_img_loaded">
+                                                                </strong>
+                                                            </div>
+                                                            <p class="pt-3">March camp 3-5-2023</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a href="#four" aria-controls="four" role="tab" data-toggle="tab">
+                                                        <div class="tg-match">
+                                                            <div class="tg-box">
+                                                                <strong class="tg-teamlogo">
+                                                                    <img src="asset/img/logoES.png"
+                                                                        alt="image description" class="mCS_img_loaded">
+                                                                </strong>
+                                                            </div>
+                                                            <p class="pt-3"> April camp 25 - 4 - 2023</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a href="#five" aria-controls="five" role="tab" data-toggle="tab">
+                                                        <div class="tg-match">
+                                                            <div class="tg-box">
+                                                                <strong class="tg-teamlogo">
+                                                                    <img src="asset/img/logoES.png"
+                                                                        alt="image description" class="mCS_img_loaded">
+                                                                </strong>
+                                                            </div>
+                                                            <p class="pt-3">May camp 27 - 5 - 2023</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a href="#six" aria-controls="six" role="tab" data-toggle="tab">
+                                                        <div class="tg-match">
+                                                            <div class="tg-box">
+                                                                <strong class="tg-teamlogo">
+                                                                    <img src="asset/img/logoES.png"
+                                                                        alt="image description" class="mCS_img_loaded">
+                                                                </strong>
+                                                            </div>
+                                                            <p class="pt-3">June camp 6-16-2023</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a href="#seven" aria-controls="seven" role="tab" data-toggle="tab">
+                                                        <div class="tg-match">
+                                                            <div class="tg-box">
+                                                                <strong class="tg-teamlogo">
+                                                                    <img src="asset/img/logoES.png"
+                                                                        alt="image description" class="mCS_img_loaded">
+                                                                </strong>
+                                                            </div>
+                                                            <p class="pt-3">July camp 7-18-2023</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a href="#eight" aria-controls="seven" role="tab" data-toggle="tab">
+                                                        <div class="tg-match">
+                                                            <div class="tg-box">
+                                                                <strong class="tg-teamlogo">
+                                                                    <img src="asset/img/logoES.png"
+                                                                        alt="image description" class="mCS_img_loaded">
+                                                                </strong>
+                                                            </div>
+                                                            <p class="pt-3"> August camp 8-20-2023</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div id="mCSB_1_scrollbar_vertical"
+                                            class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical"
+                                            style="display: block;">
+                                            <div class="mCSB_draggerContainer">
+                                                <div id="mCSB_1_dragger_vertical" class="mCSB_dragger"
+                                                    style="position: absolute; min-height: 30px; display: block; height: 198px; max-height: 340px; top: 0px;">
+                                                    <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
+                                                </div>
+                                                <div class="mCSB_draggerRail"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section result -->
+
+    <!-- section numbers -->
+    <section class="numbers mt-5 ">
+        <div class="container">
+            <div class="row text-white mt-5 pt-3 text-center">
+                <div class="col-sm-6 col-lg-3 ">
+                    <i class="fa-solid fa-volleyball"></i>
+                    <div class="num">
+                        <span>+</span>
+                        <span class="counter">61</span>
+                    </div>
+                    <p>Number of Professionals</p>
+                </div>
+                <div class="col-sm-6 col-lg-3 ">
+                    <i class="fa-solid fa-user-group"></i>
+                    <div class="num">
+                        <span>+</span>
+                        <span class="counter">911</span>
+                    </div>
+                    <p> Number of Players</p>
+                </div>
+                <div class="col-sm-6 col-lg-3 ">
+                    <i class="fa-solid fa-people-group"></i>
+                    <div class="num">
+                        <span>+</span>
+                        <span class="counter">230</span>
+                    </div>
+                    <p>Camps</p>
+                </div>
+                <div class="col-sm-6 col-lg-3 ">
+                    <i class="fa-solid fa-trophy"></i>
+                    <div class="num">
+                        <span>+</span>
+                        <span class="counter">65</span>
+                    </div>
+                    <p>Tournaments</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- consectetur section -->
+    <section class="tg-main-section tg-haslayout fixtures mt-5 mb-5 mb-lg-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-2 about text-lg-end text-sm-start ">
+                    <p class="text-uppercase">
+                        - Sports championships
+                    </p>
+                    <div class="line"></div>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-lg-10 pull-right pt-4" data-aos="fade-right"
+                    data-aos-duration="3000">
+                    <div class="tg-latestresult">
+                        <div class="row">
+                            <div class="col-lg-5 col-sm-12 col-xs-12">
+                                <div class="tg-contentbox">
+                                    <div class="tg-section-heading">
+                                        <h2>Sports championships.</h2>
+                                    </div>
+                                    <div class="tg-description">
+                                        <hr>
+                                        <p>In continuation of the sporting successes, Eleven Stars Sports and Sports
+                                            Investment Company simultaneously marketed the players who participated with
+                                            us in the football camps in Turkey to a number of European clubs and the
+                                            Balkan countries contracting with our company, in order to match their
+                                            energies and sporting abilities in order to provide the best chances of
+                                            success in front of them, And in order to secure important professional
+                                            contracts that benefit them, and we are always the best mediator in that.
+                                        </p>
+                                    </div>
+                                    <div class="tg-btnbox">
+                                        <a class="tg-btn btn text-warning" href="fixturesReadMore.html"><span>Read
+                                                More</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-sm-12 col-xs-12 mt-5 mt-lg-0">
+                                <div id="tg-upcomingmatch-slider"
+                                    class="tg-upcomingmatch-slider tg-upcomingmatch swiper-container-vertical">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide swiper-slide-active"
+                                            style="height: 113.333px; margin-bottom: 10px;">
+                                            <div class="tg-match">
+                                                <div class="tg-matchdetail">
+                                                    <div class="tg-box">
+                                                        <strong class="tg-teamlogo">
+                                                            <img src="asset/img/logoES.png" alt="image description"
+                                                                class="mCS_img_loaded">
+                                                        </strong>
+                                                    </div>
+                                                    <p class="pt-3">Antalya Championship 12-25-2022</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide swiper-slide-next"
+                                            style="height: 113.333px; margin-bottom: 10px;">
+                                            <div class="tg-match">
+                                                <div class="tg-matchdetail">
+                                                    <div class="tg-box">
+                                                        <strong class="tg-teamlogo">
+                                                            <img src="asset/img/logoES.png" alt="image description"
+                                                                class="mCS_img_loaded">
+                                                        </strong>
+                                                    </div>
+                                                    <p class="pt-3">Yalova Championship 8-15-2023</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" style="height: 113.333px; margin-bottom: 10px;">
+                                            <div class="tg-match">
+                                                <div class="tg-matchdetail">
+                                                    <div class="tg-box">
+                                                        <strong class="tg-teamlogo">
+                                                            <img src="asset/img/logoES.png" alt="image description"
+                                                                class="mCS_img_loaded">
+                                                        </strong>
+                                                    </div>
+                                                    <p class="pt-3">December tournament</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tg-themebtnnext"><span class="fa fa-angle-down"></span></div>
+                                    <div class="tg-themebtnprev swiper-button-disabled"><span
+                                            class="fa fa-angle-up"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section ifram -->
+    <section class="ifram mb-5 mb-lg-0">
+        <iframe src="https://www.youtube.com/embed/Pb_eKzGROy4" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </section>
+
+    <!-- top rated -->
+    <section class="tg-main-section tg-haslayout rated mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-2 about text-lg-end text-sm-start ">
+                    <p>
+                        - TOP RATED PLAYER
+
+                    </p>
+                    <div class="line"></div>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-lg-10 pull-right mt-5" data-aos="fade-up" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <div class="tg-topratedplayer tg-haslayout">
+                        <div class="row">
+                            <div class="col-lg-7 col-sm-12 col-xs-12 order-1 order-lg-0 mt-5 mt-lg-0">
+                                <div id="tg-playerscrollbar"
+                                    class="tg-players tg-playerscrollbar mCustomScrollbar _mCS_2">
+                                    <div id="mCSB_2" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside"
+                                        tabindex="0" style="max-height: none;">
+                                        <div id="mCSB_2_container" class="mCSB_container"
+                                            style="position:relative; top:0; left:0;" dir="ltr">
+                                            <div class="tg-player">
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-xs-6 d-none d-md-block">
+                                                        <figure>
+                                                            <img src="asset/img/player/Rashed.png"
+                                                                alt="image description"
+                                                                class="mCS_img_loaded img-fluid">
+                                                        </figure>
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-6 pull-right">
+                                                        <div class="tg-playcontent">
+                                                            <a class="tg-theme-tag" href="#">left wing</a>
+                                                            <h3 class="namePlayer">Rashid Al-Shwaiki</h3>
+                                                            <span class="tg-stars d-block text-warning">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star" style="color: #adabb4;"></i>
+
+                                                            </span>
+                                                            <div class="tg-description">
+                                                                <p>Incididunt utia labore et dolore siti magna aliqua
+                                                                    adinim lipat</p>
+                                                            </div>
+                                                            <!-- <ul class="tg-socialicons text-white">
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-facebook-f"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-twitter px-3"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-linkedin-in pe-3"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-dribbble"></i></a></li>
+                                                            </ul> -->
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="tg-player">
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-xs-6 d-none d-md-block pb-5">
+                                                        <figure>
+                                                            <img src="asset/img/player/تامر.png" alt="image description"
+                                                                class="mCS_img_loaded img-fluid">
+                                                        </figure>
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-6 pull-right">
+                                                        <div class="tg-playcontent">
+                                                            <a class="tg-theme-tag" href="#">attacker</a>
+                                                            <h3 class="namePlayer">Tamer Medlej</h3>
+                                                            <span class="tg-stars d-block text-warning">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+
+                                                            </span>
+                                                            <div class="tg-description">
+                                                                <p>Incididunt utia labore et dolore siti magna aliqua
+                                                                    adinim lipat</p>
+                                                            </div>
+                                                            <!-- <ul class="tg-socialicons text-white">
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-facebook-f"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-twitter px-3"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-linkedin-in pe-3"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-dribbble"></i></a></li>
+                                                            </ul> -->
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="tg-player">
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-xs-6 d-none d-md-block">
+                                                        <figure>
+                                                            <img src="asset/img/player/adam.png" alt="image description"
+                                                                class="mCS_img_loaded img-fluid">
+                                                        </figure>
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-6 pull-right">
+                                                        <div class="tg-playcontent">
+                                                            <a class="tg-theme-tag" href="#">attacker</a>
+                                                            <h3 class="namePlayer">Adam Safadi</h3>
+                                                            <span class="tg-stars d-block text-warning">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+
+                                                            </span>
+                                                            <div class="tg-description">
+                                                                <p>Incididunt utia labore et dolore siti magna aliqua
+                                                                    adinim lipat</p>
+                                                            </div>
+                                                            <!-- <ul class="tg-socialicons text-white">
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-facebook-f"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-twitter px-3"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-linkedin-in pe-3"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-dribbble"></i></a></li>
+                                                            </ul> -->
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="tg-player">
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-xs-6 d-none d-md-block">
+                                                        <figure>
+                                                            <img src="asset/img/player/rassmi.png"
+                                                                alt="image description"
+                                                                class="mCS_img_loaded img-fluid">
+                                                        </figure>
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-6 pull-right">
+                                                        <div class="tg-playcontent">
+                                                            <a class="tg-theme-tag" href="#">Right defender</a>
+                                                            <h3 class="namePlayer">Rasmi Issa</h3>
+                                                            <span class="tg-stars d-block text-warning">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star" style="color: #adabb4;"></i>
+
+                                                            </span>
+                                                            <div class="tg-description">
+                                                                <p>Incididunt utia labore et dolore siti magna aliqua
+                                                                    adinim lipat</p>
+                                                            </div>
+                                                            <!-- <ul class="tg-socialicons text-white">
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-facebook-f"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-twitter px-3"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-linkedin-in pe-3"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-dribbble"></i></a></li>
+                                                            </ul> -->
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="tg-player">
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-xs-6 d-none d-md-block">
+                                                        <figure>
+                                                            <img src="asset/img/player/امين أبو صعلوك.png"
+                                                                alt="image description"
+                                                                class="mCS_img_loaded img-fluid">
+                                                        </figure>
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-6 pull-right">
+                                                        <div class="tg-playcontent">
+                                                            <a class="tg-theme-tag" href="#">attacker</a>
+                                                            <h3 class="namePlayer">Amin Abu Saalouk</h3>
+                                                            <span class="tg-stars d-block text-warning">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star" style="color: #adabb4;"></i>
+
+                                                            </span>
+                                                            <div class="tg-description">
+                                                                <p>Incididunt utia labore et dolore siti magna aliqua
+                                                                    adinim lipat</p>
+                                                            </div>
+                                                            <!-- <ul class="tg-socialicons text-white">
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-facebook-f"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-twitter px-3"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-linkedin-in pe-3"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-dribbble"></i></a></li>
+                                                            </ul> -->
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="tg-player">
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-xs-6 d-none d-md-block">
+                                                        <figure>
+                                                            <img src="asset/img/player/محمد الخالدي.png"
+                                                                alt="image description"
+                                                                class="mCS_img_loaded img-fluid">
+                                                        </figure>
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-6 pull-right">
+                                                        <div class="tg-playcontent">
+                                                            <a class="tg-theme-tag" href="#">attacking midfielder</a>
+                                                            <h3 class="namePlayer">Mohammed Al-Khalidi</h3>
+                                                            <span class="tg-stars d-block text-warning">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star" style="color: #adabb4;"></i>
+
+                                                            </span>
+                                                            <div class="tg-description">
+                                                                <p>Incididunt utia labore et dolore siti magna aliqua
+                                                                    adinim lipat</p>
+                                                            </div>
+                                                            <!-- <ul class="tg-socialicons text-white">
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-facebook-f"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-twitter px-3"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-linkedin-in pe-3"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-dribbble"></i></a></li>
+                                                            </ul> -->
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="tg-player">
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-xs-6 d-none d-md-block">
+                                                        <figure>
+                                                            <img src="asset/img/player/ياسين.png"
+                                                                alt="image description"
+                                                                class="mCS_img_loaded img-fluid">
+                                                        </figure>
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-6 pull-right">
+                                                        <div class="tg-playcontent">
+                                                            <a class="tg-theme-tag" href="#">attacking midfielder</a>
+                                                            <h3 class="namePlayer">Yassin Amanan</h3>
+                                                            <span class="tg-stars d-block text-warning">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+
+                                                            </span>
+                                                            <div class="tg-description">
+                                                                <p>Incididunt utia labore et dolore siti magna aliqua
+                                                                    adinim lipat</p>
+                                                            </div>
+                                                            <!-- <ul class="tg-socialicons text-white">
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-facebook-f"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-twitter px-3"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-linkedin-in pe-3"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-dribbble"></i></a></li>
+                                                            </ul> -->
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="tg-player">
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-xs-6 d-none d-md-block">
+                                                        <figure>
+                                                            <img src="asset/img/player/أيوب.png" alt="image description"
+                                                                class="mCS_img_loaded img-fluid">
+                                                        </figure>
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-6 pull-right">
+                                                        <div class="tg-playcontent">
+                                                            <a class="tg-theme-tag" href="#">a guard</a>
+                                                            <h3 class="namePlayer">Ayoub Mqni</h3>
+                                                            <span class="tg-stars d-block text-warning">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+
+                                                            </span>
+                                                            <div class="tg-description">
+                                                                <p>Incididunt utia labore et dolore siti magna aliqua
+                                                                    adinim lipat</p>
+                                                            </div>
+                                                            <!-- <ul class="tg-socialicons text-white">
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-facebook-f"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-twitter px-3"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-linkedin-in pe-3"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-dribbble"></i></a></li>
+                                                            </ul> -->
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="tg-player">
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-xs-6 d-none d-md-block">
+                                                        <figure>
+                                                            <img src="asset/img/player/ياسر.png" alt="image description"
+                                                                class="mCS_img_loaded img-fluid">
+                                                        </figure>
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-6 pull-right">
+                                                        <div class="tg-playcontent">
+                                                            <a class="tg-theme-tag" href="#">Central defense</a>
+                                                            <h3 class="namePlayer">Yasser Al-Khatib</h3>
+                                                            <span class="tg-stars d-block text-warning">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star" style="color: #adabb4;"></i>
+
+                                                            </span>
+                                                            <div class="tg-description">
+                                                                <p>Incididunt utia labore et dolore siti magna aliqua
+                                                                    adinim lipat</p>
+                                                            </div>
+                                                            <!-- <ul class="tg-socialicons text-white">
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-facebook-f"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-twitter px-3"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-linkedin-in pe-3"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-dribbble"></i></a></li>
+                                                            </ul> -->
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="mCSB_2_scrollbar_vertical"
+                                            class="mCSB_scrollTools mCSB_2_scrollbar mCS-light mCSB_scrollTools_vertical"
+                                            style="display: block;">
+                                            <div class="mCSB_draggerContainer">
+                                                <div id="mCSB_2_dragger_vertical" class="mCSB_dragger"
+                                                    style="position: absolute; min-height: 30px; display: block; height: 229px; max-height: 456px; top: 0px;">
+                                                    <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
+                                                </div>
+                                                <div class="mCSB_draggerRail"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-sm-12 col-xs-12 mt-0 mt-lg-5 order-0 order-lg-1">
+                                <div class="tg-contentbox">
+                                    <div class="tg-section-heading">
+                                        <h2>consectetur adipisicing elit sed do eiusmid tempor incididunt labore</h2>
+                                        <hr>
+                                    </div>
+                                    <div class="tg-description">
+                                        <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt utia labore et
+                                            dolore magna aliqua enim ad minim veniam quistrud on ullamco laboris nisi ut
+                                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                            voluptate velit esse cillum doloreeu fugiat nulla pariatur cepteur sint
+                                            occaecat.</p>
+                                    </div>
+                                    <div class="tg-btnbox">
+                                        <a class="tg-btn btn" href="bookMyticket.html"><span>Buy Tickets</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- points -->
+    <section class=" tg-haslayout tg-bgstyletwo points mt-5 mt-lg-0 mb-5">
+        <!-- <div class="tg-bgboxone"></div> -->
+        <div class="tg-bgpattrant">
+            <div class="tg-bgc d-none d-lg-block"></div>
+            <div class="container">
+                <div class="tg-pointstablewrapper">
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12 col-lg-8">
+                            <div class="tg-pointstable">
+                                <div class="tg-section-heading">
+                                    <h4 class="text-white">POINTS TABLE</h4>
+                                    <hr class="bg-white">
+                                    <div class="row text-white d-none d-sm-flex p-3">
+                                        <div class="col-6 pe-0 pe-md-5">Name</div>
+                                        <div class="col-2 text-center  ">Age</div>
+                                        <div class="col-1 ">Speed</div>
+                                        <div class="col-2 text-end">position on the field</div>
+                                        <div class="col-1 text-center text-md-end ">Evaluation</div>
+                                    </div>
+                                </div>
+                                <div id="tg-pointstable-slider" class="tg-pointstable-slider swiper-container-vertical">
+                                    <div class="swiper-wrapper"
+                                        style="transform: translate3d(0px, -385px, 0px); transition-duration: 0ms;">
+                                        <div class="swiper-slide" style="height: 54.1667px; margin-bottom: 10px;">
+                                            <div class="tg-pointtable">
+                                                <div class="tg-box">Ali Twazi</div>
+                                                <div class="tg-box">18</div>
+                                                <div class="tg-box">32</div>
+                                                <div class="tg-box" style="font-size: 10px;">Right defender</div>
+                                                <div class="tg-box">95%</div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" style="height: 54.1667px; margin-bottom: 10px;">
+                                            <div class="tg-pointtable">
+                                                <div class="tg-box">Yasser Al-Khatib</div>
+                                                <div class="tg-box">17</div>
+                                                <div class="tg-box">34</div>
+                                                <div class="tg-box" style="font-size: 10px;">Central defense</div>
+                                                <div class="tg-box">90%</div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" style="height: 54.1667px; margin-bottom: 10px;">
+                                            <div class="tg-pointtable">
+                                                <div class="tg-box">Anas Issa</div>
+                                                <div class="tg-box">16</div>
+                                                <div class="tg-box">35</div>
+                                                <div class="tg-box" style="font-size: 10px;">Central defense</div>
+                                                <div class="tg-box">97%</div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" style="height: 54.1667px; margin-bottom: 10px;">
+                                            <div class="tg-pointtable">
+                                                <div class="tg-box">Ayham zbn</div>
+                                                <div class="tg-box">22</div>
+                                                <div class="tg-box">32</div>
+                                                <div class="tg-box" style="font-size: 8px;">attacking midfielder</div>
+                                                <div class="tg-box">90%</div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" style="height: 54.1667px; margin-bottom: 10px;">
+                                            <div class="tg-pointtable">
+                                                <div class="tg-box">Mahmoud Jabareen</div>
+                                                <div class="tg-box">17</div>
+                                                <div class="tg-box">33</div>
+                                                <div class="tg-box" style="font-size: 10px;">Left defender</div>
+                                                <div class="tg-box">92%</div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide swiper-slide-prev"
+                                            style="height: 54.1667px; margin-bottom: 10px;">
+                                            <div class="tg-pointtable">
+                                                <div class="tg-box w-50">Karim Azab</div>
+                                                <div class="tg-box">17</div>
+                                                <div class="tg-box">34</div>
+                                                <div class="tg-box" style="font-size: 10px;">attacker</div>
+                                                <div class="tg-box">94%</div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide swiper-slide-active"
+                                            style="height: 54.1667px; margin-bottom: 10px;">
+                                            <div class="tg-pointtable">
+                                                <div class="tg-box w-50">Ayoub Mqni</div>
+                                                <div class="tg-box">20</div>
+                                                <div class="tg-box">30</div>
+                                                <div class="tg-box" style="font-size: 10px;">a guard</div>
+                                                <div class="tg-box">98%</div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide swiper-slide-next"
+                                            style="height: 54.1667px; margin-bottom: 10px;">
+                                            <div class="tg-pointtable">
+                                                <div class="tg-box w-50">Obi Abu Sharar</div>
+                                                <div class="tg-box">17</div>
+                                                <div class="tg-box">36</div>
+                                                <div class="tg-box" style="font-size: 12px;">attacker</div>
+                                                <div class="tg-box">89%</div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" style="height: 54.1667px; margin-bottom: 10px;">
+                                            <div class="tg-pointtable">
+                                                <div class="tg-box w-50">Adam Safadi</div>
+                                                <div class="tg-box">17</div>
+                                                <div class="tg-box">34</div>
+                                                <div class="tg-box" style="font-size: 12px;">attacker</div>
+                                                <div class="tg-box">94%</div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" style="height: 54.1667px; margin-bottom: 10px;">
+                                            <div class="tg-pointtable">
+                                                <div class="tg-box w-50">Yazan Bashir</div>
+                                                <div class="tg-box">20</div>
+                                                <div class="tg-box">34</div>
+                                                <div class="tg-box" style="font-size: 10px;">Central defender</div>
+                                                <div class="tg-box">96%</div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" style="height: 54.1667px; margin-bottom: 10px;">
+                                            <div class="tg-pointtable">
+                                                <div class="tg-box w-50">Baraa Al-Shweiki</div>
+                                                <div class="tg-box">19</div>
+                                                <div class="tg-box">34</div>
+                                                <div class="tg-box" style="font-size: 10px;">Central defender</div>
+                                                <div class="tg-box">92%</div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" style="height: 54.1667px; margin-bottom: 10px;">
+                                            <div class="tg-pointtable">
+                                                <div class="tg-box w-50">Tamer Medlej</div>
+                                                <div class="tg-box">20</div>
+                                                <div class="tg-box">35</div>
+                                                <div class="tg-box" style="font-size: 12px;">attacker</div>
+                                                <div class="tg-box">96%</div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" style="height: 54.1667px; margin-bottom: 10px;">
+                                            <div class="tg-pointtable">
+                                                <div class="tg-box w-50">Hadi Issa</div>
+                                                <div class="tg-box">17</div>
+                                                <div class="tg-box">32</div>
+                                                <div class="tg-box" style="font-size: 10px;">Left defender</div>
+                                                <div class="tg-box">90%</div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" style="height: 54.1667px; margin-bottom: 10px;">
+                                            <div class="tg-pointtable">
+                                                <div class="tg-box w-50">Rasmi Issa</div>
+                                                <div class="tg-box">18</div>
+                                                <div class="tg-box">32</div>
+                                                <div class="tg-box" style="font-size: 10px;">Right defender</div>
+                                                <div class="tg-box">90%</div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" style="height: 54.1667px; margin-bottom: 10px;">
+                                            <div class="tg-pointtable">
+                                                <div class="tg-box w-50">Gabriel Awad</div>
+                                                <div class="tg-box">18</div>
+                                                <div class="tg-box">34</div>
+                                                <div class="tg-box" style="font-size: 12px;">attacker</div>
+                                                <div class="tg-box">91%</div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" style="height: 54.1667px; margin-bottom: 10px;">
+                                            <div class="tg-pointtable">
+                                                <div class="tg-box w-50">Amin Abu Saalouk</div>
+                                                <div class="tg-box">18</div>
+                                                <div class="tg-box">35</div>
+                                                <div class="tg-box" style="font-size: 12px;">attacker</div>
+                                                <div class="tg-box">95%</div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" style="height: 54.1667px; margin-bottom: 10px;">
+                                            <div class="tg-pointtable">
+                                                <div class="tg-box w-50">Mohamed taha</div>
+                                                <div class="tg-box">18</div>
+                                                <div class="tg-box">34</div>
+                                                <div class="tg-box" style="font-size: 8px;">attacking midfielder</div>
+                                                <div class="tg-box">92%</div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" style="height: 54.1667px; margin-bottom: 10px;">
+                                            <div class="tg-pointtable">
+                                                <div class="tg-box w-50">Ali Sarsour</div>
+                                                <div class="tg-box">17</div>
+                                                <div class="tg-box">35</div>
+                                                <div class="tg-box" style="font-size: 10px;">left wing</div>
+                                                <div class="tg-box">97%</div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" style="height: 54.1667px; margin-bottom: 10px;">
+                                            <div class="tg-pointtable">
+                                                <div class="tg-box w-50">Ahmed Abu Aisha</div>
+                                                <div class="tg-box">19</div>
+                                                <div class="tg-box">33</div>
+                                                <div class="tg-box" style="font-size: 8px;">attacking midfielder</div>
+                                                <div class="tg-box">95%</div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" style="height: 54.1667px; margin-bottom: 10px;">
+                                            <div class="tg-pointtable">
+                                                <div class="tg-box w-50">Atheer Abu Arqoub</div>
+                                                <div class="tg-box">21</div>
+                                                <div class="tg-box">32</div>
+                                                <div class="tg-box" style="font-size: 10px;">Central defender</div>
+                                                <div class="tg-box">97%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tg-themebtnnext swiper-button-disabled"><span
+                                            class="fa fa-angle-down text-warning"></span></div>
+                                    <div class="tg-themebtnprev"><span class="fa fa-angle-up text-warning"></span></div>
+                                </div>
+                                <!-- <div class="tg-btnbox">
+                                <a class="tg-btn" href="#"><span>view all</span></a>
+                            </div> -->
+                            </div>
+                        </div>
+                        <div class="col-lg-4 d-none d-lg-block">
+                            <figure>
+                                <img src="asset/img/img-03(1).png" class="img-fluid" alt="image description">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog -->
+    <section class="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-2 about text-lg-end text-sm-start ">
+                    <p class="text-uppercase">
+                        - Coach training courses.
+
+                    </p>
+                    <div class="line"></div>
+                </div>
+                <div class="col-sm-12 col-lg-10 " data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                    data-aos-delay="300" data-aos-offset="0" data-aos-duration="1500">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-6">
+                            <img src="asset/img/رياضات أخرى.jpg" class="img-fluid" alt="">
+                            <h5 class="mt-3">Other Sports:</h5>
+                            <hr>
+                            <p>Handball is considered a popular sport with a wide global appeal, extending to all five
+                                continents, in over 180 countries, and attracting around 19 million participants of all
+                                ages. This sport stands out for combining speed, strength, endurance, agility,
+                                precision, skill, and teamwork, making it one of the most popular Olympic sports
+                                worldwide.
+                            </p>
+                            <a href="news1ReadMore.html" class="btn">Read More</a>
+                        </div>
+                        <div class="col-sm-12 col-lg-6 mt-5 mt-lg-0">
+                            <img src="asset/img/tkween.jpg" class="img-fluid" alt="">
+                            <h5 class="mt-3">Coach training courses.</h5>
+                            <hr>
+                            <p>The purpose of the sports coach training course put on by ELEVEN STARS SPORT is to
+                                involve experienced coaches in teaching new and less experienced coaches in all sports
+                                coaching and fitness disciplines. We hope to create a team of knowledgeable trainers who
+                                may later share their experience with others through the coach training workshop. </p>
+                            <a href="news2ReadMore.html" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- start footer -->
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white mt-5" data-aos="fade-up" data-aos-duration="3000">
+        <div class="container">
+            <div class="container p-4 pb-0">
+                <section class="">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold text-warning">
+                                Eleven Stars
+                            </h6>
+                            <p>
+                                Eleven Stars Sports in all its branches (football, swimming, and other sports) was
+                                founded on the principles of trust, honesty, and honesty. Our approach is clarity and
+                                frankness in dealing with all customers. Their comfort and gratitude are
+                                our actual success.
+                            </p>
+                        </div>
+                        <hr class="w-100 clearfix d-md-none" />
+                        <!-- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                            <p>
+                                <a class="text-white">MDBootstrap</a>
+                            </p>
+                            <p>
+                                <a class="text-white">MDWordPress</a>
+                            </p>
+                            <p>
+                                <a class="text-white">BrandFlow</a>
+                            </p>
+                            <p>
+                                <a class="text-white">Bootstrap Angular</a>
+                            </p>
+                        </div> -->
+
+                        <hr class="w-100 clearfix d-md-none" />
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold text-warning">
+                                About Us
+                            </h6>
+                            <p>
+                                <a href="#" class="text-white">Home</a>
+                            </p>
+                            <p>
+                                <a href="contact.html" class="text-white">Contact Us</a>
+                            </p>
+                            <p>
+                                <a href="bookMyticket.html" class="text-white">Buy Tickets</a>
+                            </p>
+                            <p>
+                                <!-- <a href="#" class="text-white">About Us</a> -->
+                            </p>
+
+
+                        </div>
+                        <hr class="w-100 clearfix d-md-none" />
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h6>
+                            <p><i class="fas fa-home mr-3"></i> Turkey Mecidiyeköy, Cd. No:7/51</p>
+                            <p><i class="fas fa-envelope me-1"></i>sports@eleven-stars.com</p>
+                            <p><i class="fas fa-phone mr-3"></i>+90 554 250 00 22</p>
+                            <p><i class="fas fa-print mr-3"></i> +90 554 250 00 22</p>
+                        </div>
+                    </div>
+                </section>
+                <hr class="my-3">
+                <section class="p-3 pt-0">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-7 col-lg-8 text-center text-md-start">
+                            <div class="p-3">
+                                © 2020 Copyright:
+                                <a class="text-white" href="#">sports@eleven-stars.com</a>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                            <a href="https://www.facebook.com/elevenstarssports/"
+                                class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i
+                                    class="fab fa-facebook-f"></i></a>
+
+                            <!-- Twitter -->
+                            <a href="https://t.me/elevenstarssportsofficial"
+                                class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i
+                                    class="fab fa-telegram"></i></a>
+
+                            <!-- Google -->
+                            <a href="https://www.youtube.com/channel/UCQBGLClxr2Iiv5JNpALgVPw"
+                                class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i
+                                    class="fab fa-youtube"></i></a>
+
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/elevenstarssports/"
+                                class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+
+
+
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.counter').counterUp({
+                delay: 15,
+                time: 2500
+            });
+        });
+        // changeLanguage AR , EN
+        function changeLanguage(element) {
+            var selectedValue = element.value;
+            if (selectedValue === 'ar') {
+                window.location.href = 'index-ar.html';
+            } else {
+                window.location.href = '#';
+            }
+        }
+    </script>
+    <script src="asset/js/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.1/waypoints.js"
+        integrity="sha512-VZJRXeHxVvEu+ijQoxyGmcC4QSJF9ohr67XucK6kRRhRaPS+WN8J/C53yB/k18wSSAphUgPfsrV3PY3pm9MWIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="asset/js/swiper.min.js"></script>
+    <script src="asset/js/custom.js"></script>
+    <script src="asset/js/aos.js"></script>
+    <script src="asset/js/bootstrap.js"></script>
+    <script>
+        // Section Time GLAD
+        // Set the date we're counting down to
+        var countDownDate = new Date("Aug 20, 2023 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("day").innerHTML = days;
+            document.getElementById("hour").innerHTML = hours;
+            document.getElementById("minute").innerHTML = minutes;
+            document.getElementById("second").innerHTML = seconds;
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timer").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+
+    </script>
+
+    <script src="asset/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="asset/css/aos.css">
+    <link rel="stylesheet" href="asset/css/swiper.min.css">
+    <link rel="stylesheet" href="asset/css/custom-ar.css">
+    <link rel="stylesheet" href="asset/css/style-ar.css" />
+    <!-- favicon.ico -->
+    <link rel="shortcut icon" href="asset/img/logoES.png" type="image/x-icon">
+    <title>الرئيسية - البطولات</title>
+</head>
+
+<body>
+    <!-- start nav -->
+    <nav class="bg-dark d-flex justify-content-between px-4">
+        <h3 class="text-warning">Eleven Stars</h3>
+        <div class="bar">
+            <div class="lan d-flex align-items-center ">
+
+                <a href="bookMyticket-ar.html" class="btn btn-success me-1 me-md-2"
+                    style="background-color: #6f9a37;">اشتري الان</a>
+                <select class=" bg-secondary text-white me-1 me-md-3" onchange="changeLanguage(this)">
+                    <option value="ar" selected>AR</option>
+                    <option value="en">EN</option>
+                </select>
+                <a class="btn btn-warning text-white d-sm-inline-block d-md-none " data-bs-toggle="offcanvas"
+                    href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </a>
+            </div>
+
+            <div class="offcanvas offcanvas-start bg-body d-sm-inline-block d-md-none" tabindex="-1"
+                id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h4 class="offcanvas-title text-warning" id="offcanvasExampleLabel">Eleven Stars</h4>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+
+                    <div class="links text-center mt-5 pt-5">
+                        <a href="index-ar.html" class="text-dark ">الرئيسية</a>
+                        <a href="contact-ar.html" class="text-dark my-3 d-block ">تواصل معنا</a>
+                        <a href="bookMyticket-ar.html" class="text-dark ">احجز الان</a>
+                    </div>
+                    <div class="icon d-flex justify-content-center mt-5 pt-5">
+                        <i class="fa-brands fa-facebook text-black-50 fs-4"></i>
+                        <i class="fa-brands fa-instagram text-black-50 fs-4 px-3"></i>
+                        <i class="fa-brands fa-twitter text-black-50 fs-4"></i>
+                    </div>
+                    <!-- <div class="contact position-absolute ">
+                        <i class="fa-regular fa-envelope text-dark fs-4 "></i>
+                        <small class="fs-5 text-black-50 "> : e.stars@gmail.com</small>
+                        <hr>
+                        <i class="fa-solid fa-phone text-dark fs-4"></i>
+                        <small class="fs-5 text-black-50"> : +972 598 778 345</small>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav -->
+
+    <!-- start main -->
+    <main class="contact">
+        <div class="tg-imglayer"></div>
+        <div class="container pt-4 header">
+            <div class="row pt-3 d-none d-md-flex nav">
+                <div class="col-5 text-start mt-5 pt-5">
+                    <i class="fa-brands fa-facebook text-white fs-4"></i>
+                    <i class="fa-brands fa-instagram text-white fs-4 px-3"></i>
+                    <i class="fa-brands fa-twitter text-white fs-4"></i>
+                    <div class="line" style="border-bottom: 2px solid rgb(142, 139, 142)"></div>
+                    <a href="index-ar.html" class="text-white link">الرئيسية</a>
+                    <a href="contact-ar.html" class="text-white px-md-1 px-lg-3 link">تواصل معنا</a>
+                    <a href="bookMyticket-ar.html" class="text-white link">اشتري الان</a>
+                </div>
+                <div class="col-1 ms-3 d-flex justify-content-center">
+                    <img src="asset/img/logo.png" alt="" />
+                </div>
+                <div class="col-5 text-end mt-5 pt-5">
+                    <i class="fa-regular fa-envelope text-white fs-4"></i>
+                    <small class="fs-5 text-white"> : sports@eleven-stars.com</small>
+                    <div class="line" style="border-bottom: 2px solid rgb(142, 139, 142)"></div>
+                    <i class="fa-solid fa-phone text-white fs-4"></i>
+                    <small class="fs-5 text-white"> : +90 554 250 00 22</small>
+                </div>
+            </div>
+            <div class="row mt-5 mt-lg-0 ">
+                <div class="col-12 content text-center mt-5 pt-3">
+                    <h1>البطولات الرياضية
+                    </h1>
+                    <p>الرئيسية - البطولات الرياضية
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- end main -->
+    <!-- form Tickets -->
+    <section class="soccer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-6 mt-3 order-0 order-lg-1" data-aos="fade-up" data-aos-duration="3000">
+                    <h4>البطولات الرياضية
+                    </h4>
+                    <hr>
+                    <p> فيELEVEN STARS SPORT نهتم دائما بان تكون تجربة عملائنا معنا مميزة في تنظيمنا للبطولات الرياضية
+                        التي تقبل عليها الأندية العربية و خصوصا الخليجية لإقامتها على أكمل وجه في تركيا . لتحقيق ذلك ،
+                        نطبق قاسمًا مشتركًا على جميع أحداثنا الرياضية ، والذي يعتمد على منهجية واضحة ومحددة جيدًا. نجيد
+                        فهم عملائنا و تحديد أهدافهم المختلفة من المشاركة في البطولات و فهم السوق الرياضي الخاص بهم
+                        والاستفادة من التجربة الإيجابية التي تترك الرياضة أثرها فينا جميعًا. معنا سيشعر اللاعب وكأنه نجم
+                        ، مع تجربة تهتم بكل تفاصيل البطولة الرياضية. علاوة على ذلك ، نركز على المشاهدين من خلال تصميم
+                        لحظات تجذب انتباههم وتخلق أجواء احتفالية.
+
+                        و بصفة ELEVEN STARS SPORT شركة متخصصة في الأحداث الرياضية ، فإننا نقدم مجموعة واسعة من الخدمات
+                        الرياضية من الألف إلى الياء خلال البطولات المنظمة من قبلنا و التي يمكن تجميعها بشكل عام على
+                        النحو التالي:
+                        الاستقبال من و الى المطار
+                        -اقامة فندقية فارهة من فئة 5 نجوم
+                        -نظام غذائي 3 وجبات يوميا
+                        -حفل افتتاح البطولة
+                        -تصنيف جدول مباريات
+                        -قاعات رياضية + مسابح
+                        -كادر تصوير احترافي
+                        -جولات سياحية
+                        -حفل التكريم و التتويج
+                    <h4> ما هي ميزة شركة Eleven STARS SPORT في تنظيم البطولات الرياضية ؟
+                    </h4>
+                    نحن نتابع خطوة بخطوة تنظيم البطولة الرياضية حتى تتم جميع مراحلها بشكل فعال كما نضمن لكم بالنظر
+                    لخبرتنا المشهودة في هذا المجال أنه لن يتم نسيان أي تفاصيل.
+                    الأمان و المصداقية هما مفتاح السرفي تعاملنا معكم ،نحن نفي بوعودنا تجاهكم و تنظيمنا للبطولة الرياضية
+                    يخضع دائما لأنظمة محددة وشروط صارمة لا نتخلف عنها. ليس من السهل تنظيم بطولة رياضية أو منافسة
+                    بالمستوى المطلوب إدارياً ومالياً لكن فريقنا الذي يمتلك خبرة طويلة و قدرات مميزة في هذا المجال ينجح
+                    دائما في تحقيق هذا الهدف.
+
+                    </p>
+                    <p>
+                    <h4>لماذا يختار اللاعب المشاركة في بطولة رياضية في تركيا ؟
+                    </h4>
+                    لا شكّ أنه تبادر إلى ذهنك كلاعب يطمح للإحتراف في المجال الرياضي التساؤل حول إختيار المشاركة في
+                    البطولات الرياضية التي تقام في تركيا دونا عن البلدان الاخرى :
+                    ببساطة نقول لك أن تصميم الملاعب في تركيا على تعدد مدنها وقدرة الاستيعاب والخدمات المقدمة خلال
+                    المعسكرات و البطولات الرياضية فيها فيها كفيلة بأن تكون جوابا عن هذا السؤال،فكل سبل الراحة متوفرة في
+                    هذه المنشآت الرياضية التركية، ومن ثم لا تختلف كثيرا عن المنشآت في أوروبا، علاوة على أنها "أرخص"
+                    مقارنة بنظيرتها في القارة العجوز.
+                    ناهيك عن أن معظم الملاعب داخل المنشآت بعيدة عن الضجيج، وقريبة من أماكن الإقامة، وتوافر المستلزمات
+                    الضرورية والخاصة بالبطولات، مما يجعلها الأفضل والأجدر بإقامة المباريات الودية،لذلك من المقنع جدا أن
+                    تكون تركيا الحاضرة الأولى في أذهان المدربين والمسؤولين في إقامة معسكراتهم و بطولاتهم لفترة ما بين
+                    أسبوع وأسبوعين، وفي بعض الأحيان يتم تمديدها لسحر المكان والأجواء المناسبة للتدريب والتمرين.
+                    <h4> برنامج تفصيلي لبطولاتنا الرياضية :
+                    </h4>
+                    * الإستقبال
+                    <br>
+                    سيكون فريق Eleven stars على أهبة الإستعداد لإستقبال الوافدين من الأندية المشاركة في البطولة،ناهيك عن
+                    المشجعين بترحاب كبير و سلاسة عالية سيتم الإلتقاء بمشاركينا و نقلهم بكل أرياحية إلى فندق من فئة 5
+                    نجوم حتى يحصلو على وقت كافي من الراحة و النوم قبل بدء المباريات.
+                    *التغطية الصحفية المتكاملة لمباريات البطولة
+
+                    تصوير إحترافي يغطي كافة تحركات الفرق لحظة بلحظة منذ صعودهم الحافلة للذهاب للملعب الكبير
+                    وصولا إلى المباريات الصباحية و المسائية
+                    إجراء عدد من المقابلات مع المدربين و المسؤولين و اللاعبين المتميزين
+                    كما لا نغفل عن تغطية تتويج الفائزين في الملعب بالكؤوس و الميداليات
+
+                    *المتابعة الصحية للاعبين و تقديم كل الاسعافات الضرورية
+                    المتابعة الصحية في تحسين مردود لاعبينا أهمية قصوى بالنسبة لنا لذلك تكون المراقبة الطبية الرياضية
+                    للاعبين مستمرة في كافة مسار مباريات البطولة
+                    العلاج يكون مكثفا ومتواصلا لكي يعود اللاعب المتعرض للإصابة أثناء المباراة في أسرع وقت ممكن الى ارض
+                    الملعب
+                    أما اذا كان اللاعب غير قادر على مواصلة المباراة فتتم معالجته خارج الملعب أو نقله إلى المشفى لإجراء
+                    الصور و الفحوصات اللازمة
+                    وفوق ذلك يقوم أخصائي العلاج الطبيعي بتوجيه النصائح للاعبين لتفادي الإصابات الخطيرة
+                    *رحلة ترفيهية للاعبين و مدربيهم
+                    بإعتبار تركيا بكافة مدنها مدينة الجمال و الخضرة فلن نحرم المشاركين في بكولاتنا و معسكراتنا من التمتع
+                    بهذا الجمال لذلك الرحلات السياحية جزء لا يغيب عن مخططنا التنظيمي لمناسباتنا الرياضية بالإضافة إلى
+                    إغتنام فرصة التسوق من أفضل الماركات التركية و العالمية بأسعار جد مناسبة فضلا عن زيارة المطاعم
+                    المتميزة بالأطعمة المحلية
+                    *يوم التتويج
+                    ان لأجراس حفل التتويج أن تدق و هو اليوم الذي يمثل فرصة للفريق المتوّج لإعتلاء منصة التتويج و
+                    إستحقاقه بعد المستوى المتميز الذي قدمه طوال البطولة و الإفتخار بإنجازه أمام كل الأندية المشاركة كما
+                    يكون تتويجا لشركتنا في النجاح التنظيمي للبطولة و تأكيد دورنا الفعال في إخراج البطولات الرياضية بأفضل
+                    صورة ممكنة.
+                    * عقد إتفاقيات شراكة مع النوادي
+                    لأن شركتنا تثمن كل فرص النجاح و التقدم،فإنها لم تتوانى في عقد إتفاقيات شراكة مع أهم النوادي الرياضية
+                    المحترفة الحاضرة في البطولة.و عقد إتفاقيات تعكس رؤية مستقبلية تتعلق بتبادل الخدمات و الخبرات في مجال
+                    الخدمات الرياضية و التسويقية بناءا عليها سنقوم بتطوير معسكراتنا الإحترافية في كل ربوع تركيا و على
+                    مدار الأعوام القادمة.
+                    ناهيك عن تنظيم دورات تكوينية و منح فرص مبتكرة للنوادي للمشاركة في جميع التظاهرات الرياضية التي
+                    تنظمها شركتنا و الفرصة الأكبر في مساعدة النوادي على تسويق لاعبيها نحو الأندية التركية و العربية و
+                    النزوع بها إلى العالمية.
+
+                    </p>
+                    <!-- <a href="aboutReadMore.html" class="btn">Read More</a> -->
+                </div>
+                <div class="col-sm-12 col-lg-6 d-flex justify-content-center align-items-center bg-light order-0 order-lg-1"
+                    data-aos="fade-up" data-aos-duration="3000" style="height: 400px;">
+                    <img src="asset/img/img-01.png" style="height: 400px;" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- start footer -->
+    <footer class="text-center text-lg-start text-white mt-5" data-aos="fade-up" data-aos-duration="3000">
+        <div class="container">
+            <div class="container p-4 pb-0">
+                <section class="">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold text-warning">
+                                Eleven Stars
+                            </h6>
+                            <p class="description">
+                                شركة Eleven Stars Sports بكل فروعها ( رياضة كرة القدم، السباحة، وغيرها من الرياضات)
+                                تأسست على مبادئ الثقة، الصدق و الأمانة. نهجنا الوضوح و الصراحة في التعامل مع كل العملاء،
+                                فراحتهم و امتمانهم هما نجاحنا الفعلي.
+                            </p>
+                        </div>
+                        <hr class="w-100 clearfix d-md-none" />
+                        <!-- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                            <p>
+                                <a class="text-white">MDBootstrap</a>
+                            </p>
+                            <p>
+                                <a class="text-white">MDWordPress</a>
+                            </p>
+                            <p>
+                                <a class="text-white">BrandFlow</a>
+                            </p>
+                            <p>
+                                <a class="text-white">Bootstrap Angular</a>
+                            </p>
+                        </div> -->
+
+                        <hr class="w-100 clearfix d-md-none" />
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold text-warning">
+                                من نحن
+                            </h6>
+                            <p>
+                                <a href="index-ar.html" class="text-white">الرئيسية</a>
+                            </p>
+                            <p>
+                                <a href="contact-ar.html" class="text-white">تواصل معنا</a>
+                            </p>
+                            <p>
+                                <a href="bookMyticket-ar.html" class="text-white">احجز الان</a>
+                            </p>
+                            <p>
+                                <!-- <a href="#" class="text-white">من نحن</a> -->
+                            </p>
+
+
+                        </div>
+                        <hr class="w-100 clearfix d-md-none" />
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold text-warning">تواصل معنا</h6>
+                            <p><i class="fas fa-الرئيسية mr-3"></i> Turkey Mecidiyeköy, Cd. No:7/51</p>
+                            <p><i class="fas fa-envelope ms-1"></i>sports@eleven-stars.com</p>
+                            <p><i class="fas fa-phone ms-3"></i>+90 554 250 00 22</p>
+                            <p><i class="fas fa-print ms-3"></i> +90 554 250 00 22</p>
+                        </div>
+                    </div>
+                </section>
+                <hr class="my-3">
+                <section class="p-3 pt-0">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-7 col-lg-8 text-center text-md-start">
+                            <div class="p-3">
+                                حقوق الطبع محفوظة :
+                                <a class="text-white" href="#">sports@eleven-stars.com</a>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                            <a href="https://www.facebook.com/elevenstarssports/"
+                                class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i
+                                    class="fab fa-facebook-f"></i></a>
+
+                            <!-- Twitter -->
+                            <a href="https://t.me/elevenstarssportsofficial"
+                                class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i
+                                    class="fab fa-telegram"></i></a>
+
+                            <!-- Google -->
+                            <a href="https://www.youtube.com/channel/UCQBGLClxr2Iiv5JNpALgVPw"
+                                class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i
+                                    class="fab fa-youtube"></i></a>
+
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/elevenstarssports/"
+                                class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+
+
+
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.counter').counterUp({
+                delay: 15,
+                time: 2500
+            });
+        });
+        // changeLanguage AR , EN
+        function changeLanguage(element) {
+            var selectedValue = element.value;
+            if (selectedValue === 'ar') {
+                window.location.href = '#';
+            } else {
+                window.location.href = 'fixturesReadMore.html';
+            }
+        }
+    </script>
+    <script src="asset/js/jquery.counterup.min.js"></script>
+    <script src="asset/js/waypoints.js"></script>
+    <script src="asset/js/swiper.min.js"></script>
+    <script src="asset/js/custom.js"></script>
+    <script src="asset/js/aos.js"></script>
+    <script src="asset/js/bootstrap.js"></script>
+    <script src="asset/js/index.js"></script>
+</body>
+
+</html>

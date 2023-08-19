@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="asset/css/aos.css">
+    <link rel="stylesheet" href="asset/css/swiper.min.css">
+    <link rel="stylesheet" href="asset/css/custom.css">
+    <link rel="stylesheet" href="asset/css/style.css" />
+    <!-- favicon.ico -->
+    <link rel="shortcut icon" href="asset/img/logoES.png" type="image/x-icon">
+    <title>Home - sports camps</title>
+</head>
+
+<body>
+    <!-- start nav -->
+    <nav class="bg-dark d-flex justify-content-between px-4">
+        <h3 class="text-warning">Eleven Stars</h3>
+        <div class="bar">
+            <div class="lan d-flex align-items-center ">
+                <select class=" bg-secondary text-white me-1 me-md-3" onchange="changeLanguage(this)">
+                    <option value="en">EN</option>
+                    <option value="ar">AR</option>
+                </select>
+                <a href="bookMyticket.html" class="btn btn-success me-1 me-md-2" style="background-color: #6f9a37;">Book
+                    Now</a>
+                <a class="btn btn-warning text-white d-sm-inline-block d-md-none " data-bs-toggle="offcanvas"
+                    href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </a>
+            </div>
+            <div class="offcanvas offcanvas-start bg-body d-sm-inline-block d-md-none" tabindex="-1"
+                id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h4 class="offcanvas-title text-warning" id="offcanvasExampleLabel">Eleven Stars</h4>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+
+                    <div class="links text-center mt-5 pt-5">
+                        <a href="index.html" class="text-warning ">Home</a>
+                        <a href="contact.html" class="text-dark my-3 d-block ">Contact Us</a>
+                        <a href="bookMyticket.html" class="text-dark ">But Tickets</a>
+                    </div>
+                    <div class="icon d-flex justify-content-center mt-5 pt-5">
+                        <i class="fa-brands fa-facebook text-black-50 fs-4"></i>
+                        <i class="fa-brands fa-instagram text-black-50 fs-4 px-3"></i>
+                        <i class="fa-brands fa-twitter text-black-50 fs-4"></i>
+                    </div>
+                    <!-- <div class="contact position-absolute ">
+                        <i class="fa-regular fa-envelope text-dark fs-4 "></i>
+                        <small class="fs-5 text-black-50 "> : e.stars@gmail.com</small>
+                        <hr>
+                        <i class="fa-solid fa-phone text-dark fs-4"></i>
+                        <small class="fs-5 text-black-50"> : +972 598 778 345</small>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav -->
+
+    <!-- start main -->
+    <main class="contact">
+        <div class="tg-imglayer"></div>
+        <div class="container pt-4 header">
+            <div class="row pt-3 d-none d-md-flex nav">
+                <div class="col-5 text-end mt-5 pt-5">
+                    <i class="fa-brands fa-facebook text-white fs-4"></i>
+                    <i class="fa-brands fa-instagram text-white fs-4 px-3"></i>
+                    <i class="fa-brands fa-twitter text-white fs-4"></i>
+                    <div class="line" style="border-bottom: 2px solid rgb(142, 139, 142)"></div>
+                    <a href="index.html" class="text-white link">Home</a>
+                    <a href="contact.html" class="text-white px-md-1 px-lg-3 link">Contact Us</a>
+                    <a href="bookMyticket.html" class="text-white link">Buy Tickets</a>
+                </div>
+                <div class="col-1 ms-3 d-flex justify-content-center">
+                    <img src="asset/img/logo.png" alt="" />
+                </div>
+                <div class="col-5 text-start mt-5 pt-5">
+                    <i class="fa-regular fa-envelope text-white fs-4"></i>
+                    <small class="fs-5 text-white"> : sports@eleven-stars.com</small>
+                    <div class="line" style="border-bottom: 2px solid rgb(142, 139, 142)"></div>
+                    <i class="fa-solid fa-phone text-white fs-4"></i>
+                    <small class="fs-5 text-white"> : +90 554 250 00 22</small>
+                </div>
+            </div>
+            <div class="row mt-5 mt-lg-0 ">
+                <div class="col-12 content text-center mt-5 pt-3">
+                    <h1>sports camps</h1>
+                    <p>Home - sports camps</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- end main -->
+    <!-- form Tickets -->
+    <section class="soccer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-6 mt-3" data-aos="fade-up" data-aos-duration="3000">
+                    <h4>What are sports camps ?</h4>
+                    <hr>
+                    <p>The sports camp provided by ELEVEN STARS SPORT company is a comprehensive institution for sports
+                        services, covering individual and team sports in all their aspects. The camp is complete with
+                        various elements, including medical examinations, morning and evening training sessions,
+                        rehabilitation programs, and improving physical fitness levels, as well as high-level trial
+                        matches.
+                    </p>
+                    <h4>Whom do we offer our sports camp services to?</h4>
+                    <p>The sports camps offered by ELEVEN STARS SPORTS Company specifically cater to children and youth
+                        who are enrolled in sports schools and sports departments within educational institutions. These
+                        sports camps are organized year-round, with a more intensive schedule during summer and winter
+                        vacations.
+                    </p>
+                    <h4>Our services: </h4>
+                    <h4>Organizing public sports camps.</h4>
+                    <p>Our company organizes public sports camps by grouping players into sports teams in accordance
+                        with the overall policy of the sports camp. Additionally, we strive to achieve the goals and
+                        needs of the sports camps.
+                    </p>
+                    <p>In doing so, we rely on specific principles that consider the objectives of the camp, which our
+                        company aims to achieve:
+                    </p>
+                    <p>We ensure to develop distinctive sports programs that cater to the needs of our trainees and
+                        provide them with proper nutrition and essential amenities for their comfort.
+                    </p>
+                    <p>Clarifying the roles, responsibilities, and tasks provided to each sports camp participant.
+                    </p>
+                    <p>The Sports Supervisor is based on meeting the needs and goals necessary to obtain the highest
+                        sports performance. He or she is also responsible for arranging and coordinating activities
+                        among the athletes.
+                    </p>
+                    <p>Giving players the chance to analyze their matches and work on improving the performance's weak
+                        points.</p>
+                    <p>choosing exercises that will help the student reach the height of their fitness for contests,
+                        with as many as 2 or 3 exercises every day.
+                    </p>
+                    <p>One of the newest and most effective methods for teaching players their strategic
+                        responsibilities is the possibility of televising matches of good teams and having the coach
+                        analyze the positive and negative aspects of the team's performance.
+                    </p>
+                    <p>Flexibility, adaptation, and modification of the program content according to changing
+                        circumstances and situations, while always emphasizing the balance in the program materials.
+                    </p>
+                    <h4>Organizing private sports camps.</h4>
+                    <p>ELEVEN STARS SPORTS Company provides you with a service for organizing private camps and
+                        tournaments based on the following principles because we believe that camps can have a
+                        significant impact on general education and especially sports training, which are our most
+                        powerful tools for growth and development in the new society.
+                    </p>
+                    <p>Defining the purpose of sports camp.
+                    </p>
+                    <p>Determining the days of the sports event while creating a program that takes into consideration
+                        achieving the camp's objectives.
+                    </p>
+                    <p>We assist you in selecting a suitable location for hosting your sports camp, ensuring its
+                        suitability and appropriateness through our assessment before organizing the camp. This way, the
+                        players can adapt to the surroundings and be well-prepared for the competition.
+                    </p>
+                    <p>We assist you in selecting a suitable location for hosting your sports camp, ensuring its
+                        suitability and appropriateness through our assessment before organizing the camp. This way, the
+                        players can adapt to the surroundings and be well-prepared for the competition.
+                    </p>
+                    <p>We ensure that the sports fields have ample and comfortable space for our trainees, and we also
+                        make sure that the camp location is close to various essential service centers, such as
+                        healthcare services, for example.
+                    </p>
+                    <p>We don't hide the fact that the aesthetic aspect is an important factor in our selection of
+                        sports fields and accommodation for our players. We always strive to choose the most beautiful
+                        places that offer natural landscapes or are close to prominent tourist destinations in Turkey
+                        and Istanbul.
+                    </p>
+                    <p>For the camp to be optimal, we carefully restrict the number of participants needed, as this
+                        stage enables us to assess the required budget and resources in an efficient manner.
+                    </p>
+                    <p>We determine the duration of the camp based on several key factors, including the camp's purpose,
+                        the allocated budget, and the time that participants can spend with us.
+                    </p>
+                    <p>We take care of providing all the necessary equipment, sports devices, and materials needed for
+                        the camp. Additionally, some items may be adjusted or
+                        added based on specific circumstances and requirements. </p>
+                    <h4></h4>
+                    <h4>Comprehensive schedule for our sports camps:
+                    </h4>
+                    <p>We will receive you at the airport from the first day of your arrival in Istanbul.
+                    </p>
+                    <p>The best 5-star hotels in Istanbul will provide you with lodging.
+                        Yes, this is a reality and not just a pipe dream; you will be trained by qualified Italian
+                        instructors.
+                    </p>
+                    <p>You only need to bring your football shoes because we will supply all sports equipment.
+                    </p>
+                    <p>You have access to the hotel's fitness center and swimming pool, which you can use to enhance
+                        your athletic performance before a workout.
+                        Playing friendly games against Turkish teams will give you the chance to try out different
+                        tactics.
+                    </p>
+                    <p>The training sessions and games at our camps are seen by talent scouts, agents, and club
+                        representatives. This is a bonus because it increases your chance of attracting their interest
+                        and being chosen to join their clubs.
+                    </p>
+                    <p>We respect our trainees as potential stars, thus our qualified team is constantly on hand to
+                        cover all camp activities and games!</p>
+                    <p>You undoubtedly deserve some rest after giving your all during games. We have taken that into
+                        consideration, and we are ready to welcome you with Bosporus cruises and sightseeing tours in
+                        Istanbul's most picturesque neighborhoods.
+                    </p>
+                    <p>Does our responsibility end after the camp, providing participants with participation
+                        certificates? Certainly not. We invest in the chosen players and ensure their transition to
+                        European clubs, providing them with the best opportunities for success.</p>
+
+                    <!-- <a href="aboutReadMore.html" class="btn">Read More</a> -->
+                </div>
+                <div class="col-sm-12 col-lg-6" data-aos="fade-up" data-aos-duration="3000">
+                    <img src="asset/img/img-01(1).jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- start footer -->
+    <footer class="text-center text-lg-start text-white mt-5" data-aos="fade-up" data-aos-duration="3000">
+        <div class="container">
+            <div class="container p-4 pb-0">
+                <section class="">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold text-warning">
+                                Eleven Stars
+                            </h6>
+                            <p>
+                                Eleven Stars Sports in all its branches (football, swimming, and other sports) was
+                                founded on the principles of trust, honesty, and honesty. Our approach is clarity and
+                                frankness in dealing with all customers. Their comfort and gratitude are
+                                our actual success.
+                            </p>
+                        </div>
+                        <hr class="w-100 clearfix d-md-none" />
+                        <!-- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                            <p>
+                                <a class="text-white">MDBootstrap</a>
+                            </p>
+                            <p>
+                                <a class="text-white">MDWordPress</a>
+                            </p>
+                            <p>
+                                <a class="text-white">BrandFlow</a>
+                            </p>
+                            <p>
+                                <a class="text-white">Bootstrap Angular</a>
+                            </p>
+                        </div> -->
+
+                        <hr class="w-100 clearfix d-md-none" />
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold text-warning">
+                                About Us
+                            </h6>
+                            <p>
+                                <a href="#" class="text-white">Home</a>
+                            </p>
+                            <p>
+                                <a href="contact.html" class="text-white">Contact Us</a>
+                            </p>
+                            <p>
+                                <a href="bookMyticket.html" class="text-white">Buy Tickets</a>
+                            </p>
+                            <p>
+                                <!-- <a href="#" class="text-white">About Us</a> -->
+                            </p>
+
+
+                        </div>
+                        <hr class="w-100 clearfix d-md-none" />
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h6>
+                            <p><i class="fas fa-home mr-3"></i> Turkey Mecidiyeköy, Cd. No:7/51</p>
+                            <p><i class="fas fa-envelope me-1"></i>sports@eleven-stars.com</p>
+                            <p><i class="fas fa-phone mr-3"></i>+90 554 250 00 22</p>
+                            <p><i class="fas fa-print mr-3"></i> +90 554 250 00 22</p>
+                        </div>
+                    </div>
+                </section>
+                <hr class="my-3">
+                <section class="p-3 pt-0">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-7 col-lg-8 text-center text-md-start">
+                            <div class="p-3">
+                                © 2020 Copyright:
+                                <a class="text-white" href="#">sports@eleven-stars.com</a>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                            <a href="https://www.facebook.com/elevenstarssports/"
+                                class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i
+                                    class="fab fa-facebook-f"></i></a>
+
+                            <!-- Twitter -->
+                            <a href="https://t.me/elevenstarssportsofficial"
+                                class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i
+                                    class="fab fa-telegram"></i></a>
+
+                            <!-- Google -->
+                            <a href="https://www.youtube.com/channel/UCQBGLClxr2Iiv5JNpALgVPw"
+                                class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i
+                                    class="fab fa-youtube"></i></a>
+
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/elevenstarssports/"
+                                class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+
+
+
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.counter').counterUp({
+                delay: 15,
+                time: 2500
+            });
+        });
+        // changeLanguage AR , EN
+        function changeLanguage(element) {
+            var selectedValue = element.value;
+            if (selectedValue === 'ar') {
+                window.location.href = 'aboutReadMore-ar.html';
+            } else {
+                window.location.href = '#';
+            }
+        }
+    </script>
+    <script src="asset/js/jquery.counterup.min.js"></script>
+    <script src="asset/js/waypoints.js"></script>
+    <script src="asset/js/swiper.min.js"></script>
+    <script src="asset/js/custom.js"></script>
+    <script src="asset/js/aos.js"></script>
+    <script src="asset/js/bootstrap.js"></script>
+    <script src="asset/js/index.js"></script>
+</body>
+
+</html>

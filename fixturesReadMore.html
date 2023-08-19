@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="asset/css/aos.css">
+    <link rel="stylesheet" href="asset/css/swiper.min.css">
+    <link rel="stylesheet" href="asset/css/custom.css">
+    <link rel="stylesheet" href="asset/css/style.css" />
+    <!-- favicon.ico -->
+    <link rel="shortcut icon" href="asset/img/logoES.png" type="image/x-icon">
+    <title>Home - Sports championships.</title>
+</head>
+
+<body>
+    <!-- start nav -->
+    <nav class="bg-dark d-flex justify-content-between px-4">
+        <h3 class="text-warning">Eleven Stars</h3>
+        <div class="bar">
+            <div class="lan d-flex align-items-center ">
+                <select class=" bg-secondary text-white me-1 me-md-3" onchange="changeLanguage(this)">
+                    <option value="en">EN</option>
+                    <option value="ar">AR</option>
+                </select>
+                <a href="bookMyticket.html" class="btn btn-success me-1 me-md-2" style="background-color: #6f9a37;">Book
+                    Now</a>
+                <a class="btn btn-warning text-white d-sm-inline-block d-md-none " data-bs-toggle="offcanvas"
+                    href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </a>
+            </div>
+
+            <div class="offcanvas offcanvas-start bg-body d-sm-inline-block d-md-none" tabindex="-1"
+                id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h4 class="offcanvas-title text-warning" id="offcanvasExampleLabel">Eleven Stars</h4>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+
+                    <div class="links text-center mt-5 pt-5">
+                        <a href="index.html" class="text-warning ">Home</a>
+                        <a href="contact.html" class="text-dark my-3 d-block ">Contact Us</a>
+                        <a href="bookMyticket.html" class="text-dark ">But Tickets</a>
+                    </div>
+                    <div class="icon d-flex justify-content-center mt-5 pt-5">
+                        <i class="fa-brands fa-facebook text-black-50 fs-4"></i>
+                        <i class="fa-brands fa-instagram text-black-50 fs-4 px-3"></i>
+                        <i class="fa-brands fa-twitter text-black-50 fs-4"></i>
+                    </div>
+                    <!-- <div class="contact position-absolute ">
+                        <i class="fa-regular fa-envelope text-dark fs-4 "></i>
+                        <small class="fs-5 text-black-50 "> : e.stars@gmail.com</small>
+                        <hr>
+                        <i class="fa-solid fa-phone text-dark fs-4"></i>
+                        <small class="fs-5 text-black-50"> : +972 598 778 345</small>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav -->
+
+    <!-- start main -->
+    <main class="contact">
+        <div class="tg-imglayer"></div>
+        <div class="container pt-4 header">
+            <div class="row pt-3 d-none d-md-flex nav">
+                <div class="col-5 text-end mt-5 pt-5">
+                    <i class="fa-brands fa-facebook text-white fs-4"></i>
+                    <i class="fa-brands fa-instagram text-white fs-4 px-3"></i>
+                    <i class="fa-brands fa-twitter text-white fs-4"></i>
+                    <div class="line" style="border-bottom: 2px solid rgb(142, 139, 142)"></div>
+                    <a href="index.html" class="text-white link">Home</a>
+                    <a href="contact.html" class="text-white px-md-1 px-lg-3 link">Contact Us</a>
+                    <a href="bookMyticket.html" class="text-white link">Buy Tickets</a>
+                </div>
+                <div class="col-1 ms-3 d-flex justify-content-center">
+                    <img src="asset/img/logo.png" alt="" />
+                </div>
+                <div class="col-5 text-start mt-5 pt-5">
+                    <i class="fa-regular fa-envelope text-white fs-4"></i>
+                    <small class="fs-5 text-white"> : sports@eleven-stars.com</small>
+                    <div class="line" style="border-bottom: 2px solid rgb(142, 139, 142)"></div>
+                    <i class="fa-solid fa-phone text-white fs-4"></i>
+                    <small class="fs-5 text-white"> : +90 554 250 00 22</small>
+                </div>
+            </div>
+            <div class="row mt-5 mt-lg-0 ">
+                <div class="col-12 content text-center mt-5 pt-3">
+                    <h1>Sports championships. </h1>
+                    <p>Home - Sports championships.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- end main -->
+    <!-- form Tickets -->
+    <section class="soccer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-6 mt-3 order-0 order-lg-1" data-aos="fade-up" data-aos-duration="3000">
+                    <h4>Sports championships.</h4>
+                    <hr>
+                    <p>At ELEVEN STARS SPORT, we always strive to make our clients' experience with us exceptional in
+                        organizing sports championships that attract Arab clubs, especially from the Gulf region, to be
+                        held in Turkey at its best. To achieve this, we apply a common denominator to all our sports
+                        events, which relies on a clear and well-defined methodology. We excel in understanding our
+                        clients and identifying their different goals in participating in championships, as well as
+                        understanding their specific sports market and leveraging the positive impact that sports leave
+                        on all of us. With us, the player will feel like a star, with an experience that cares about
+                        every detail of the sports championship. Moreover, we focus on the viewers by designing moments
+                        that capture their attention and create a celebratory atmosphere.
+                        As ELEVEN STARS SPORT, a specialized sports events company, we provide a wide range of sports
+                        services from A to Z during the championships organized by us. These services can be generally
+                        categorized as follows:
+
+                    </p>
+                    <ul>
+                        <li>Airport reception and drop-off
+                        </li>
+                        <li>Luxurious 5-star hotel accommodation</li>
+                        <li>3 meals a day</li>
+                        <li>Tournament opening ceremony</li>
+                        <li>Match scheduling</li>
+                        <li>Sports halls + swimming pools</li>
+                        <li>Professional photography team</li>
+                        <li>Sightseeing tours</li>
+                        <li>Awards and closing ceremony</li>
+                    </ul>
+                    <h4>The advantage of Eleven STARS SPORT in organizing sports championships lies in : </h4>
+                    <p>our meticulous step-by-step approach, ensuring that every stage of the sports tournament is
+                        conducted efficiently. With our renowned experience in this field, we guarantee that no detail
+                        will be overlooked and that every aspect of the championship will be handled with utmost
+                        care.<br>
+                        Safety and credibility are the keys to our dealings with you. We honor our promises and ensure
+                        that our organization of sports championships always adheres to specific regulations and strict
+                        conditions that we never deviate from. Organizing a sports tournament at the required
+                        administrative and financial level is not an easy task, but our team, with its extensive
+                        experience and exceptional capabilities in this field, consistently succeeds in achieving this
+                        goal.
+                    </p>
+                    <h4>Why would a player choose to participate in a sports championship in Turkey?</h4>
+                    <p>You may be wondering why you should choose to compete in sports competitions conducted in Turkey
+                        over those held in other nations if you are a competitive athlete hoping to become a
+                        professional in the sports industry:
+                    </p>
+                    <p>Simply expressed, the architecture of Turkish sports facilities, which vary across different
+                        towns, their capacity, and the services offered during camps and sporting events, can provide a
+                        clear response to this. These Turkish sporting facilities are very similar to those in Europe in
+                        terms of amenities, and they are also "more affordable" than their European counterparts. They
+                        offer all the luxuries.
+                    </p>
+                    <p>Not to add that the majority of the stadiums inside the complexes are quiet, near the lodging
+                        areas, and furnished with everything needed for championships. They are therefore the most
+                        effective and appropriate for holding friendly games. It is overwhelmingly compelling that
+                        Turkey is the top choice among coaches and officials to host their camps and championships for a
+                        duration of one to two weeks, occasionally prolonged due to the allure of the location and the
+                        ideal environment for practicing and competing.
+                    </p>
+                    <h4>detailed program for our sports championships includes the following:
+                    </h4>
+                    <ul>
+                        <li>A warm and welcoming reception will be provided by the Eleven Stars team to welcome visitors
+                            from the championship-playing clubs as well as the eager supporters. The participants will
+                            be met by our team, who will then take them in comfort to a five-star hotel so they can have
+                            large rest and sleep before the matches begin.
+                        </li>
+                        <li>Integrated Media Coverage: We offer comprehensive media coverage for every championship
+                            game.
+                        </li>
+                        <li>Professional Filming: We provide professional filming that covers every move of the teams,
+                            moment by moment, starting from their bus ride to the grand stadium, all the way to the
+                            morning and evening matches. We also conduct several interviews with coaches, officials, and
+                            standout players.
+                        </li>
+                        <li>We also make sure that the celebration of the winners on the field with trophies and medals
+                            is covered.
+                            <ul>
+                                <li>Health Monitoring and Required Medical Care: We place the utmost focus on the health
+                                    monitoring of our players in order to enhance their performance. As a result,
+                                    athletes are continuously under medical observation throughout the event. Any player
+                                    hurt during the game receives intensive and ongoing care to guarantee a speedy
+                                    recovery and return to the field.
+                                </li>
+                                <li>If a player is unable to continue the match, they will be treated outside the field
+                                    or transferred to the hospital for necessary scans and examinations. Additionally,
+                                    the physiotherapist provides advice to the players to avoid serious injuries.
+                                </li>
+                                <li>An Entertaining Trip for Players and Coaches
+                                </li>
+                                <li>We won't prevent the attendees of our universities and camps from taking use of this
+                                    splendor because we view Turkey, with all of its cities, as a city of beauty and
+                                    greenery. The organization of our sporting events therefore includes tourist
+                                    excursions in great detail. Along with visiting prestigious restaurants serving
+                                    regional cuisine, we also take advantage of the opportunity to shop from the top
+                                    Turkish and worldwide brands at very affordable prices.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h4>Day of the Crowning</h4>
+                    <p>On this day, the coronation bells should sound, signaling the opportunity for the victorious team
+                        to ascend the platform and justifiably claim victory for the amazing effort they demonstrated
+                        during the competition. In front of all the participating clubs, they can feel proud of their
+                        accomplishment. Additionally, it represents the pinnacle of our organization's accomplishments
+                        in organizing the competition successfully, reiterating our important role in providing sporting
+                        events in the best way possible.
+                    </p>
+                    <h4>Establishing partnership agreements with clubs.</h4>
+                    <p>Our business has taken great care to establish partnerships with the most illustrious
+                        professional sports clubs competing in the championship because it cherishes every chance for
+                        success and growth. These partnerships represent a forward-looking concept that centers on
+                        exchanging services and knowledge in the sports and marketing industries. On the strength of
+                        this, we will improve our professional training camps throughout different regions of Turkey in
+                        the upcoming years.
+                        In addition, we'll set up training sessions and creative ways for clubs to take part in all the
+                        sporting events our business puts on.
+                    </p>
+                    <!-- <a href="aboutReadMore.html" class="btn">Read More</a> -->
+                </div>
+                <div class="col-sm-12 col-lg-6 d-flex justify-content-center align-items-center bg-light order-0 order-lg-1"
+                    data-aos="fade-up" data-aos-duration="3000" style="height: 400px;">
+                    <img src="asset/img/img-01.png" style="height: 400px;" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- start footer -->
+    <footer class="text-center text-lg-start text-white mt-5" data-aos="fade-up" data-aos-duration="3000">
+        <div class="container">
+            <div class="container p-4 pb-0">
+                <section class="">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold text-warning">
+                                Eleven Stars
+                            </h6>
+                            <p>
+                                Eleven Stars Sports in all its branches (football, swimming, and other sports) was
+                                founded on the principles of trust, honesty, and honesty. Our approach is clarity and
+                                frankness in dealing with all customers. Their comfort and gratitude are
+                                our actual success.
+                            </p>
+                        </div>
+                        <hr class="w-100 clearfix d-md-none" />
+                        <!-- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                            <p>
+                                <a class="text-white">MDBootstrap</a>
+                            </p>
+                            <p>
+                                <a class="text-white">MDWordPress</a>
+                            </p>
+                            <p>
+                                <a class="text-white">BrandFlow</a>
+                            </p>
+                            <p>
+                                <a class="text-white">Bootstrap Angular</a>
+                            </p>
+                        </div> -->
+
+                        <hr class="w-100 clearfix d-md-none" />
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold text-warning">
+                                About Us
+                            </h6>
+                            <p>
+                                <a href="#" class="text-white">Home</a>
+                            </p>
+                            <p>
+                                <a href="contact.html" class="text-white">Contact Us</a>
+                            </p>
+                            <p>
+                                <a href="bookMyticket.html" class="text-white">Buy Tickets</a>
+                            </p>
+                            <p>
+                                <!-- <a href="#" class="text-white">About Us</a> -->
+                            </p>
+
+
+                        </div>
+                        <hr class="w-100 clearfix d-md-none" />
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h6>
+                            <p><i class="fas fa-home mr-3"></i> Turkey Mecidiyeköy, Cd. No:7/51</p>
+                            <p><i class="fas fa-envelope me-1"></i>sports@eleven-stars.com</p>
+                            <p><i class="fas fa-phone mr-3"></i>+90 554 250 00 22</p>
+                            <p><i class="fas fa-print mr-3"></i> +90 554 250 00 22</p>
+                        </div>
+                    </div>
+                </section>
+                <hr class="my-3">
+                <section class="p-3 pt-0">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-7 col-lg-8 text-center text-md-start">
+                            <div class="p-3">
+                                © 2020 Copyright:
+                                <a class="text-white" href="#">sports@eleven-stars.com</a>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                            <a href="https://www.facebook.com/elevenstarssports/"
+                                class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i
+                                    class="fab fa-facebook-f"></i></a>
+
+                            <!-- Twitter -->
+                            <a href="https://t.me/elevenstarssportsofficial"
+                                class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i
+                                    class="fab fa-telegram"></i></a>
+
+                            <!-- Google -->
+                            <a href="https://www.youtube.com/channel/UCQBGLClxr2Iiv5JNpALgVPw"
+                                class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i
+                                    class="fab fa-youtube"></i></a>
+
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/elevenstarssports/"
+                                class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+
+
+
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.counter').counterUp({
+                delay: 15,
+                time: 2500
+            });
+        });
+        // changeLanguage AR , EN
+        function changeLanguage(element) {
+            var selectedValue = element.value;
+            if (selectedValue === 'ar') {
+                window.location.href = 'fixturesReadMore-ar.html';
+            } else {
+                window.location.href = '#';
+            }
+        }
+    </script>
+    <script src="asset/js/jquery.counterup.min.js"></script>
+    <script src="asset/js/waypoints.js"></script>
+    <script src="asset/js/swiper.min.js"></script>
+    <script src="asset/js/custom.js"></script>
+    <script src="asset/js/aos.js"></script>
+    <script src="asset/js/bootstrap.js"></script>
+    <script src="asset/js/index.js"></script>
+</body>
+
+</html>
