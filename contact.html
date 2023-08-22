@@ -134,7 +134,7 @@
                     </div>
                     <div class="col-md-6 order-0 order-md-1">
                         <div class="wow fadeInUp" data-wow-delay="0.2s">
-                            <form class="text-secondary">
+                            <form class="text-secondary" method="POST">
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
@@ -181,6 +181,27 @@
             </div>
         </div>
     </section>
+
+    <!-- send Message -->
+
+    <!-- <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $to = "sports@eleven-stars.com";
+        $subject = $_POST["typeMessage"]; 
+
+        $message = "Name: " . $_POST["name"] . "\n";
+        $message .= "Email: " . $_POST["email"] . "\n";
+        $message .= "Subject: " . $_POST["typeMessage"] . "\n";
+        $message .= "Message: " . $_POST["message"];
+
+        if (mail($to, $subject, $message)) {
+            echo "<p>Message sent successfully!</p>";
+        } else {
+            echo "<p>Message sending failed.</p>";
+        }
+    }
+    ?> -->
+    
     <!-- start footer -->
     <footer class="text-center text-lg-start text-white mt-5" data-aos="fade-up" data-aos-duration="3000">
         <div class="container">
